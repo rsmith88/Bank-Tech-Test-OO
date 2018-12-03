@@ -1,13 +1,15 @@
 ## bank-tech-test
 Practice tech test
 
-## To Run Program
+## To Use Program
+SETUP:
 Start irb in your console
 Run the following commands:
   require './lib/account.rb'
-  account = Account.New
+  account = Account.new
 
-To interact with your account, you can run the following commands:
+RUN:
+To use your account, you can run the following commands:
 account.deposit(amount_of_your_choice)
 account.withdraw(amount_of_your_choice)
 account.statement.print

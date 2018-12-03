@@ -8,7 +8,8 @@ class Statement
   def print
     puts 'Date       || credit || debit || balance '
     @transactions.each do |transaction|
-      puts "#{transaction.date}  ||  #{transaction.credit}  ||  #{transaction.debit}  ||  #{transaction.balance}"
+      puts "#{transaction.date} ||  #{transaction.credit}  ||  #{transaction.debit}  ||  #{transaction.balance}"
     end
+    return "Thank you for choosing Tech-Test Bank!"
   end
 end

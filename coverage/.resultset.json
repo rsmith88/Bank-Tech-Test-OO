@@ -7,10 +7,12 @@
         1,
         1,
         1,
+        1,
         null,
         null,
         1,
         1,
+        null,
         null,
         null,
         1,
@@ -60,9 +62,11 @@
         1,
         4,
         4,
+        4,
         null,
         null,
         1,
+        2,
         2,
         2,
         null,
@@ -85,6 +89,7 @@
         1,
         1,
         null,
+        1,
         null,
         null
       ],
@@ -107,6 +112,8 @@
         1,
         1,
         1,
+        1,
+        null,
         null,
         null,
         1,
@@ -124,6 +131,8 @@
       ],
       "/Users/raylenesmith/Desktop/Projects/bank-tech-test/spec/transaction_spec.rb": [
         1,
+        null,
+        1,
         1,
         1,
         1,
@@ -142,11 +151,12 @@
         1,
         1,
         1,
+        null,
         null,
         null,
         null
       ]
     },
-    "timestamp": 1543846865
+    "timestamp": 1543847610
   }
 }
