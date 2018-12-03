@@ -1,10 +1,13 @@
 # Bank Tech Test
-Practice tech test
+This is a practice tech test. We were required to satisfy the specifications and acceptance criteria set out below. My program relies on three separate classes to create the functionality required by the client. It allows the user to create an account, then deposit, withdraw and view their statement.
+
+I have also feature tested and unit tested the program. Instructions for how to run the tests are included below.
 
 ## How To Set Up & Use Program
 ### Set Up:
 1. Fork this repo and download the files
-2. Run bundle install
+2. Run 'bundle install'
+3. To run tests, use the command 'rspec'
 3. Start irb in your console, and run the following commands:
   * require './lib/account.rb'
   * account = Account.new
@@ -16,7 +19,7 @@ To use your account, you can run the following commands:
 * account.statement.print
 
 ### Example:
-[img1]: .public/example_of_program_in_irb.png
+![alt text](.public/example_of_program_in_irb.png)
 
 ## Specification
 You should be able to interact with your code via a REPL like IRB or the JavaScript console. (You don't need to implement a command line interface that takes input from STDIN.)
