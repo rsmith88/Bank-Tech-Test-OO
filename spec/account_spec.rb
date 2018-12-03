@@ -15,6 +15,11 @@ describe Account do
       expect(subject.balance).to eq 100
     end
 
+    it 'should create a record a transaction' do
+      subject.deposit(100)
+      expect(subject.transactions.length).to eq 1
+    end
+
   end
 
   describe "#withdraw" do
