@@ -1,9 +1,11 @@
 require 'statement'
 
 describe Statement do
-  it 'should be initialized with transactions as an argument' do
-    statement = Statement.new([])
-    expect(statement.transactions).to be_a Array
+  describe '#initialize' do
+    it 'should be initialized with transactions as an argument' do
+      statement = Statement.new([])
+      expect(statement.transactions).to be_a Array
+    end
   end
 
   describe '#print' do
