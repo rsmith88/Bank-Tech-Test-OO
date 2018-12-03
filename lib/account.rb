@@ -4,7 +4,8 @@ class Account
 
   def initialize
     @balance = 0
-    @statement = Statement.new
+    @statement = Statement.new(@transactions)
+    @transactions = []
   end
 
   attr_reader :balance, :statement
