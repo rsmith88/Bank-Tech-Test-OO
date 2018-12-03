@@ -10,4 +10,10 @@ describe Account do
     expect(subject.balance).to eq 100
   end
 
+  it 'should let a user withdraw a sum of money' do
+    subject.deposit(200)
+    subject.withdraw(50)
+    expect(subject.balance).to eq 150
+  end
+
 end
