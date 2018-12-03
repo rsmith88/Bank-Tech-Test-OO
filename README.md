@@ -1,7 +1,7 @@
 # Bank Tech Test
 This is a practice tech test. We were required to satisfy the specifications and acceptance criteria set out below.
 
-My approach for this project was to use TDD, DRY and SRP to create a clean, functioning program that was easy to read and change. My program relies on three separate classes to create the functionality required by the client. It allows the user to create an account, make deposits and withdrawals, and view their statement.
+My approach for this project was to use TDD, DRY and SRP to create a clean, functioning program that was easy to read and change. My program relies on three separate classes to create the functionality required by the specifications: account, transaction, and statement. These classes work together to allow the user to create an account, make deposits and withdrawals, and view their statement.
 
 I have also feature tested and unit tested the program. Instructions for how to run the tests are included below.
 
