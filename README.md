@@ -1,13 +1,15 @@
 # Bank Tech Test
 Practice tech test
 
-## To Use Program
+## How To Set Up & Use Program
 ### Set Up:
-Start irb in your console, and run the following commands:
+1. Fork this repo and download the files
+2. Run bundle install
+3. Start irb in your console, and run the following commands:
   * require './lib/account.rb'
   * account = Account.new
 
-### Run:
+### Using the Program:
 To use your account, you can run the following commands:
 * account.deposit(amount_of_your_choice);
 * account.withdraw(amount_of_your_choice);
