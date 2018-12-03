@@ -1,5 +1,3 @@
-# Class controls depositing, withdrawing & statements from account
-
 require './lib/statement.rb'
 require './lib/transaction.rb'
 

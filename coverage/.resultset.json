@@ -11,6 +11,10 @@
         null,
         1,
         1,
+        null,
+        null,
+        1,
+        1,
         1,
         1,
         null,
@@ -42,15 +46,13 @@
         null
       ],
       "/Users/raylenesmith/Desktop/Projects/bank-tech-test/lib/account.rb": [
-        null,
-        null,
         1,
         1,
         null,
         1,
         1,
-        7,
-        7,
+        8,
+        8,
         null,
         null,
         1,
@@ -129,6 +131,6 @@
         null
       ]
     },
-    "timestamp": 1543846446
+    "timestamp": 1543846565
   }
 }

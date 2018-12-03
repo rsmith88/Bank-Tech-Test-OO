@@ -5,8 +5,8 @@ describe Account do
     expect(subject.balance).to eq 0
   end
 
-  it 'should create an empty account for a user' do
-    expect(subject.balance).to eq 0
+  it 'should create an empty array for transactions' do
+    expect(subject.transactions.length).to eq 0
   end
 
   describe '#Deposit' do
