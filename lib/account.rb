@@ -1,11 +1,10 @@
-require 'statement'
-require 'transaction'
+require './lib/statement.rb'
+require './lib/transaction.rb'
 
 class Account
 
   def initialize
     @balance = 0
-    @statement = Statement.new(@transactions)
     @transactions = []
   end
 
@@ -19,6 +18,10 @@ class Account
   def withdraw(amount)
     @balance -= amount
     transactions.push(Transaction.new(0, amount, @balance))
+  end
+
+  def statement
+    Statement.new(@transactions)
   end
 
 end

@@ -1,5 +1,5 @@
 class Transaction
-  def initialize(debit, credit, balance)
+  def initialize(credit, debit, balance)
     @balance = balance
     @debit = debit
     @credit = credit
