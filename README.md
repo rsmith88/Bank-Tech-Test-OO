@@ -3,7 +3,14 @@ Practice tech test
 
 ## To Run Program
 Start irb in your console
-require './lib/account.rb'
+Run the following commands:
+  require './lib/account.rb'
+  account = Account.New
+
+To interact with your account, you can run the following commands:
+account.deposit(amount_of_your_choice)
+account.withdraw(amount_of_your_choice)
+account.statement.print
 
 ##Specification
 You should be able to interact with your code via a REPL like IRB or the JavaScript console. (You don't need to implement a command line interface that takes input from STDIN.)
