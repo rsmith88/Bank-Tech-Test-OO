@@ -13,12 +13,12 @@ class Account
 
   def deposit(amount)
     @balance += amount
-    transactions.push(Transaction.new(amount, 0))
+    transactions.push(Transaction.new(amount, 0, @balance))
   end
 
   def withdraw(amount)
     @balance -= amount
-    transactions.push(Transaction.new(amount, 0))
+    transactions.push(Transaction.new(0, amount, @balance))
   end
 
 end
