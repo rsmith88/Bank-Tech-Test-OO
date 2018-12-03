@@ -3,9 +3,8 @@ class Transaction
     @balance = balance
     @debit = debit
     @credit = credit
-    @date = Time.now.strftime("%d/%m/%Y")
+    @date = Time.now.strftime('%d/%m/%Y')
   end
 
   attr_reader :date, :debit, :credit, :balance
-
 end

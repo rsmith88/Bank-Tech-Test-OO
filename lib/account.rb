@@ -1,14 +1,15 @@
+# Class controls depositing, withdrawing & statements from account
+
 require './lib/statement.rb'
 require './lib/transaction.rb'
 
 class Account
-
   def initialize
     @balance = 0
     @transactions = []
   end
 
-  attr_reader :balance, :statement, :transactions
+  attr_reader :balance, :transactions
 
   def deposit(amount)
     @balance += amount
@@ -23,5 +24,4 @@ class Account
   def statement
     Statement.new(@transactions)
   end
-
 end
