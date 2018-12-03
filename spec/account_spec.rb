@@ -9,15 +9,20 @@ describe Account do
     expect(subject.statement).to be_a Statement
   end
 
-  it 'should let a user deposit a sum of money' do
-    subject.deposit(100)
-    expect(subject.balance).to eq 100
+  describe "#deposit" do
+    it 'should let a user deposit a sum of money' do
+      subject.deposit(100)
+      expect(subject.balance).to eq 100
+    end
+
   end
 
-  it 'should let a user withdraw a sum of money' do
-    subject.deposit(200)
-    subject.withdraw(50)
-    expect(subject.balance).to eq 150
+  describe "#withdraw" do
+    it 'should let a user withdraw a sum of money' do
+      subject.deposit(200)
+      subject.withdraw(50)
+      expect(subject.balance).to eq 150
+    end
   end
 
 end
