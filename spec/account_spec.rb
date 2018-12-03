@@ -25,9 +25,9 @@ describe Account do
 
   describe '#Withdraw' do
     it 'should let a user withdraw a sum of money' do
-      subject.deposit(200)
-      subject.withdraw(50)
-      expect(subject.balance).to eq 150
+      account = double(:account, balance: 200)
+      account.withdraw(50)
+      expect(account.balance).to eq 150
     end
 
     it 'should create a record a transaction' do
