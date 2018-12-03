@@ -91,10 +91,10 @@
       "/Users/raylenesmith/Desktop/Projects/bank-tech-test/lib/transaction.rb": [
         1,
         1,
-        7,
-        7,
-        7,
-        7,
+        10,
+        10,
+        10,
+        10,
         null,
         null,
         1,
@@ -128,9 +128,25 @@
         1,
         1,
         null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
         null
       ]
     },
-    "timestamp": 1543846565
+    "timestamp": 1543846865
   }
 }
