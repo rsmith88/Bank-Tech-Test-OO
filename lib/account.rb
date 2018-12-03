@@ -1,10 +1,13 @@
+require 'statement'
+
 class Account
 
   def initialize
     @balance = 0
+    @statement = Statement.new
   end
 
-  attr_reader :balance
+  attr_reader :balance, :statement
 
   def deposit(amount)
     @balance += amount

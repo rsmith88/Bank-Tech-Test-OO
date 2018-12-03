@@ -5,6 +5,10 @@ describe Account do
     expect(subject.balance).to eq 0
   end
 
+  it 'should create a new statement when initalized' do
+    expect(subject.statement).to be_a Statement
+  end
+
   it 'should let a user deposit a sum of money' do
     subject.deposit(100)
     expect(subject.balance).to eq 100
