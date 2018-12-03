@@ -5,6 +5,10 @@ describe Account do
     expect(subject.balance).to eq 0
   end
 
+  it 'should create an empty account for a user' do
+    expect(subject.balance).to eq 0
+  end
+
   describe '#Deposit' do
     it 'should let a user deposit a sum of money' do
       subject.deposit(100)
