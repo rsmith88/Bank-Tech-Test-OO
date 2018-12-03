@@ -3,8 +3,7 @@ Practice tech test
 
 ## To Use Program
 ### Set Up:
-Start irb in your console
-Run the following commands:
+Start irb in your console, and run the following commands:
   * require './lib/account.rb'
   * account = Account.new
 
