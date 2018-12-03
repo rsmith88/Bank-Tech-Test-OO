@@ -11,7 +11,9 @@ require 'statement'
       account = Account.new
       account.deposit(1000)
       statement = Statement.new(account.transactions)
-      expect(statement.print).to eq ("03/12/2018 || 1000 || 0 || 1000")
+      expect { statement.print }.to output(
+        "Date       || credit || debit || balance \n03/12/2018  ||  1000  ||  0  ||  1000\n")
+        .to_stdout
     end
   end
 
