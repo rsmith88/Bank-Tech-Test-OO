@@ -1,5 +1,4 @@
 describe Transaction do
-
   describe '#initialize' do
     it 'creates a new transaction that stores the date' do
       transaction = Transaction.new(0, 0, 0)
@@ -21,5 +20,4 @@ describe Transaction do
       expect(transaction.balance).to eq 2000
     end
   end
-
 end

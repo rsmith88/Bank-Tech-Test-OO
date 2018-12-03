@@ -1,3 +1,4 @@
+# This class prints all transactions
 class Statement
   def initialize(transactions)
     @transactions = transactions
@@ -10,6 +11,6 @@ class Statement
     @transactions.each do |transaction|
       puts "#{transaction.date} ||  #{transaction.credit}  ||  #{transaction.debit}  ||  #{transaction.balance}"
     end
-    return "Thank you for choosing Tech-Test Bank!"
+    'Thank you for choosing Tech-Test Bank!'
   end
 end

@@ -1,6 +1,7 @@
 require './lib/statement.rb'
 require './lib/transaction.rb'
 
+# This class manages account functions"
 class Account
   def initialize
     @balance = 0
@@ -12,13 +13,13 @@ class Account
   def deposit(amount)
     @balance += amount
     transactions.push(Transaction.new(amount, 0, @balance))
-    return "$#{amount} deposited. New account balance: #{@balance}"
+    "$#{amount} deposited. New account balance: #{@balance}"
   end
 
   def withdraw(amount)
     @balance -= amount
     transactions.push(Transaction.new(0, amount, @balance))
-    return "$#{amount} withdrawn. New account balance: #{@balance}"
+    "$#{amount} withdrawn. New account balance: #{@balance}"
   end
 
   def statement

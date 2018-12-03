@@ -1,3 +1,4 @@
+# This class records all relevant info about a transaction
 class Transaction
   def initialize(credit, debit, balance)
     @balance = balance

@@ -9,7 +9,7 @@ describe Statement do
   end
 
   describe '#print' do
-    it 'should print the transactions with date, credit, debit, and total balance' do
+    it 'should print transactions with date, credit, debit, & total balance' do
       account = Account.new
       account.deposit(1000)
       statement = Statement.new(account.transactions)
