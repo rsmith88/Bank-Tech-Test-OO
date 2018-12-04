@@ -14,17 +14,17 @@ describe Statement do
       account.deposit(1000)
       statement = Statement.new(account.transactions)
       expect { statement.print }.to output(
-        "Date       || credit || debit || balance \n#{Time.now.strftime('%d/%m/%Y')} ||  1000  ||  0  ||  1000\n"
+        "Date       || credit || debit || balance \n#{Time.now.strftime('%d/%m/%Y')} ||  1000.00  ||    ||  1000.00\n"
       )
         .to_stdout
     end
 
     it 'prints transactions with date, credit, debit, & balance (stubbed)' do
-      transaction = double(:transaction, credit: 1000, debit: 0, balance: 1000, date: '03/12/2018')
+      transaction = double(:transaction, credit: ('%.2f' % 1000), debit: nil, balance: ('%.2f' % 1000), date: '03/12/2018')
       account = double(:account, transactions: [transaction])
       statement = Statement.new(account.transactions)
       expect { statement.print }.to output(
-        "Date       || credit || debit || balance \n03/12/2018 ||  1000  ||  0  ||  1000\n"
+        "Date       || credit || debit || balance \n03/12/2018 ||  1000.00  ||    ||  1000.00\n"
       )
         .to_stdout
     end

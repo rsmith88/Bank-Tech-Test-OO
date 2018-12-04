@@ -10,7 +10,7 @@ describe "Feature" do
     account.deposit(2000)
     account.withdraw(500)
     expect { account.statement.print }.to output(
-      "Date       || credit || debit || balance \n#{date} ||  1000  ||  0  ||  1000\n#{date} ||  2000  ||  0  ||  3000\n#{date} ||  0  ||  500  ||  2500\n"
+      "Date       || credit || debit || balance \n#{date} ||  1000.00  ||    ||  1000.00\n#{date} ||  2000.00  ||    ||  3000.00\n#{date} ||    ||  500.00  ||  2500.00\n"
     )
       .to_stdout
     expect(account.statement.print).to eq("Thank you for choosing Tech-Test Bank!")
