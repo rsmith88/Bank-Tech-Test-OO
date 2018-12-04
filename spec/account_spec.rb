@@ -9,10 +9,6 @@ describe Account do
     it 'should create an empty array for transactions' do
       expect(subject.transactions.length).to eq 0
     end
-
-    it 'should create a new statement object' do
-      expect(subject.statement).to be_a Statement
-    end
   end
 
   describe '#Deposit' do
@@ -37,6 +33,16 @@ describe Account do
     it 'should create a record a transaction' do
       subject.withdraw(100)
       expect(subject.transactions.length).to eq 1
+    end
+  end
+
+  describe '#Print' do
+    it 'prints transactions with date, credit, debit, & balance' do
+      subject.deposit(1000)
+      expect { subject.statement }.to output(
+        "Date       || credit || debit || balance \n#{Time.now.strftime('%d/%m/%Y')} ||  1000.00  ||    ||  1000.00\n"
+      )
+        .to_stdout
     end
   end
 

@@ -13,4 +13,5 @@ class Statement
     end
     'Thank you for choosing Tech-Test Bank!'
   end
+  
 end

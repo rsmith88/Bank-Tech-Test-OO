@@ -6,10 +6,9 @@ class Account
   def initialize
     @balance = 0
     @transactions = []
-    @statement = Statement.new(@transactions)
   end
 
-  attr_reader :balance, :transactions, :statement
+  attr_reader :balance, :transactions
 
   def deposit(amount)
     @balance += amount
@@ -22,4 +21,9 @@ class Account
     transactions.push(Transaction.new(nil, amount, @balance.truncate(2)))
     "$#{amount} withdrawn. New account balance: #{@balance.truncate(2)}"
   end
+
+  def statement
+    Statement.new(@transactions).print
+  end
+
 end

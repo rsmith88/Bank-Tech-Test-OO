@@ -13,6 +13,7 @@ describe Statement do
       account = Account.new
       account.deposit(1000)
       statement = Statement.new(account.transactions)
+      p statement
       expect { statement.print }.to output(
         "Date       || credit || debit || balance \n#{Time.now.strftime('%d/%m/%Y')} ||  1000.00  ||    ||  1000.00\n"
       )
