@@ -40,9 +40,4 @@ describe Account do
     end
   end
 
-  describe '#Statement' do
-    it 'should create a new statement' do
-      expect(subject.statement).to be_a Statement
-    end
-  end
 end
