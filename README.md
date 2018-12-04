@@ -12,13 +12,16 @@ I have also feature tested and unit tested the program. Instructions for how to 
 3. To run tests, use the command 'rspec'
 3. Start irb in your console, and run the following commands:
   * require './lib/account.rb'
+  * require './lib/statement.rb'
   * account = Account.new
 
 ### Using the Program:
-To use your account, you can run the following commands:
+To withdraw and deposit in your account, you can run the following commands:
 * account.deposit(amount_of_your_choice);
 * account.withdraw(amount_of_your_choice);
-* account.statement.print
+
+To print your statement, run the following commands:
+* Statement.new(account.transactions).print
 
 ### Example:
 ![irb_screenshot](./public/example_of_program_in_irb.png)
