@@ -15,4 +15,14 @@ describe "Feature" do
       .to_stdout
     expect(account.statement.print).to eq("Thank you for choosing Tech-Test Bank!")
   end
+
+    it 'allows users to interact with account' do
+      date = Time.now.strftime('%d/%m/%Y')
+      account = Account.new
+      account.deposit(150.43)
+      expect(account.withdraw(75.41)).to eq(
+        "$75.41 withdrawn. New account balance: 75.02"
+      )
+
+    end
 end

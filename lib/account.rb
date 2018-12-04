@@ -13,14 +13,14 @@ class Account
 
   def deposit(amount)
     @balance += amount
-    transactions.push(Transaction.new(amount, nil, @balance))
-    "$#{amount} deposited. New account balance: #{@balance}"
+    transactions.push(Transaction.new(amount, nil, @balance.truncate(2)))
+    "$#{amount} deposited. New account balance: #{@balance.truncate(2)}"
   end
 
   def withdraw(amount)
     @balance -= amount
-    transactions.push(Transaction.new(nil, amount, @balance))
-    "$#{amount} withdrawn. New account balance: #{@balance}"
+    transactions.push(Transaction.new(nil, amount, @balance.truncate(2)))
+    "$#{amount} withdrawn. New account balance: #{@balance.truncate(2)}"
   end
 
 end

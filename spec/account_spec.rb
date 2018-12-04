@@ -9,6 +9,10 @@ describe Account do
     it 'should create an empty array for transactions' do
       expect(subject.transactions.length).to eq 0
     end
+
+    it 'should create a new statement object' do
+      expect(subject.statement).to be_a Statement
+    end
   end
 
   describe '#Deposit' do
