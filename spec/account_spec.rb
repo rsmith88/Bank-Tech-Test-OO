@@ -35,15 +35,4 @@ describe Account do
       expect(subject.transactions.length).to eq 1
     end
   end
-
-  describe '#Print' do
-    it 'prints transactions with date, credit, debit, & balance' do
-      subject.deposit(1000)
-      expect { subject.statement }.to output(
-        "Date       || credit || debit || balance \n#{Time.now.strftime('%d/%m/%Y')} ||  1000.00  ||    ||  1000.00\n"
-      )
-        .to_stdout
-    end
-  end
-
 end

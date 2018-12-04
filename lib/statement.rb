@@ -11,7 +11,5 @@ class Statement
     @transactions.each do |transaction|
       puts "#{transaction.date} ||  #{transaction.credit}  ||  #{transaction.debit}  ||  #{transaction.balance}"
     end
-    'Thank you for choosing Tech-Test Bank!'
   end
-  
 end
