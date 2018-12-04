@@ -22,5 +22,4 @@ class Account
     transactions.push(Transaction.new(nil, amount, @balance.truncate(2)))
     "$#{amount} withdrawn. New account balance: #{@balance.truncate(2)}"
   end
-
 end

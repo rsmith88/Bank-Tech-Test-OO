@@ -76,7 +76,6 @@
         4,
         4,
         null,
-        null,
         null
       ],
       "/Users/raylenesmith/Desktop/Projects/bank-tech-test/lib/statement.rb": [
@@ -133,8 +132,6 @@
         1,
         1,
         1,
-        1,
-        null,
         null,
         null,
         null,
@@ -172,7 +169,6 @@
         null,
         null,
         null,
-        null,
         null
       ],
       "/Users/raylenesmith/Desktop/Projects/bank-tech-test/spec/transaction_spec.rb": [
@@ -201,6 +197,6 @@
         null
       ]
     },
-    "timestamp": 1543921212
+    "timestamp": 1543922697
   }
 }

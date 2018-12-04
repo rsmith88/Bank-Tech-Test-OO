@@ -20,7 +20,7 @@ describe Statement do
     end
 
     it 'prints transactions with date, credit, debit, & balance (stubbed)' do
-      transaction = double(:transaction, credit: ('%.2f' % 1000), debit: nil, balance: ('%.2f' % 1000), date: '03/12/2018')
+      transaction = double(:transaction, credit: format('%.2f', 1000), debit: nil, balance: format('%.2f', 1000), date: '03/12/2018')
       account = double(:account, transactions: [transaction])
       statement = Statement.new(account.transactions)
       expect { statement.print }.to output(
@@ -28,6 +28,5 @@ describe Statement do
       )
         .to_stdout
     end
-
   end
 end
